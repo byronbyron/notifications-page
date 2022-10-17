@@ -137,18 +137,21 @@ select {
     margin-right: auto;
 }
 
-.notification-body .author {
+.notification-body .author,
+.notification-body .post {
     font-weight: bold;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.notification-body .author {
     margin-right: 0.25rem;
     color: var(--very-dark-blue);
-    text-decoration: none;
 }
 
 .notification-body .post {
-    font-weight: bold;
     margin-left: 0.25rem;
     color: var(--dark-grayish-blue);
-    text-decoration: none;
 }
 
 .notification-body .author:hover,
@@ -186,6 +189,7 @@ select {
     border: 1px solid var(--light-grayish-blue-2);
     border-radius: 0.5rem;
     text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
 }
 
 .notification-body .message:hover,
@@ -197,6 +201,7 @@ select {
     margin-left: 1rem;
     display: block;
     border-radius: 0.5rem;
+    transition: box-shadow 0.15s ease-in-out;
 }
 
 .notification-post-image:hover,
